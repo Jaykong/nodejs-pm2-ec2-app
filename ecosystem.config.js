@@ -12,10 +12,10 @@ module.exports = {
   deploy: {
     production: {
       user: "ubuntu",
-      host: "ec2-xx-xxx-xxx-xx.us-east-2.compute.amazonaws.com",
-      key: "~/.ssh/AWS-EC2-INSTANCE-LIVE.pem",
+      host: "ec2-3-17-39-8.us-east-2.compute.amazonaws.com",
+      key: "~/.ssh/home.pem",
       ref: "origin/master",
-      repo: "git@github.com:BalasubramaniM/nodejs-pm2-ec2-app.git",
+      repo: "git@github.com:Jaykong/nodejs-pm2-ec2-app.git",
       path: "/home/ubuntu/my-app",
       "post-deploy": "npm install && pm2 startOrRestart ecosystem.config.js"
     }
